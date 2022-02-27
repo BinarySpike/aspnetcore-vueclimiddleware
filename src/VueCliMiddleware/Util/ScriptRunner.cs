@@ -62,7 +62,7 @@ namespace VueCliMiddleware
 
         public void Kill()
         {
-            try { RunnerProcess?.Kill(true); } catch { }
+            try { RunnerProcess?.Kill(); } catch { }
             try { RunnerProcess?.WaitForExit(); } catch { }
         }
 
